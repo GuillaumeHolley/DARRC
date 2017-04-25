@@ -46,12 +46,7 @@ sudo apt-get install build-essential
 
 Compiling DARRC should then be as simple as:
 ```
-cd <DARRC_directory>/external/bft
-./configure
-make
-make install
-
-cd ../..
+cd <DARRC_directory>
 ./configure
 make
 make install
@@ -59,12 +54,7 @@ make install
 
 You can also install DARRC in a specific directory (for example because you are not root on the machine you are using) with:
 ```
-cd <DARRC_directory>/external/bft
-./configure --prefix=<your_directory>
-make
-make install
-
-cd ../..
+cd <DARRC_directory>
 ./configure --prefix=<your_directory>
 make
 make install
@@ -85,13 +75,7 @@ brew install g++-x
 in which *x* is the latest major version of GCC and G++.
 
 Compiling DARRC should then be as simple as:
-```
-cd <DARRC_directory>/external/bft
-./configure CC=gcc-x
-make
-make install
-
-cd ../..
+```cd <DARRC_directory>
 ./configure CC=gcc-x
 make
 make install
@@ -108,23 +92,23 @@ darrc <action parameter> <action-specific parameters> <general parameters>
 <action parameter>:
 
 	-c		[--compress]			compression
-	-u		[--update]				update
+	-u		[--update]			update
 	-d		[--decompress]			decompression
 
-	-v		[--version]				print version info
-	-h		[--help]				print help info
+	-v		[--version]			print version info
+	-h		[--help]			print help info
 
 <compression parameters>:
 
-	-k		[--kmer]		arg		length of k-mers, must be either 18, 27, 36 (default), 45, 54 or 63
-	-o		[--overlap]		arg		length of k-mers overlap, must be between 8 and 15 (default: 11)
+	-k		[--kmer]	arg		length of k-mers, must be either 18, 27, 36 (default), 45, 54 or 63
+	-o		[--overlap]	arg		length of k-mers overlap, must be between 8 and 15 (default: 11)
 
 <compression and update parameters>:
 
-	-min	[--minimizer]	arg		length of minimizers, must be between 8 and 15 (default: 9)
-	-mis	[--mismatch]	arg		number of mismatches allowed during merging (default: 5)
-	-1		[--mate1]		arg		input FASTA/Q file: single-end reads or first mate of paired-end reads
-	-2		[--mate2]		arg		input FASTA/Q file: second mate of paired-end reads
+	-min		[--minimizer]	arg		length of minimizers, must be between 8 and 15 (default: 9)
+	-mis		[--mismatch]	arg		number of mismatches allowed during merging (default: 5)
+	-1		[--mate1]	arg		input FASTA/Q file: single-end reads or first mate of paired-end reads
+	-2		[--mate2]	arg		input FASTA/Q file: second mate of paired-end reads
 	-l1		[--listmate1]	arg		list of input FASTA/Q files: single-end reads or first mate of paired-end reads
 	-l2		[--listmate2]	arg		list of input FASTA/Q files: second mate of paired-end reads
 
@@ -132,11 +116,11 @@ darrc <action parameter> <action-specific parameters> <general parameters>
 
 <general parameters>:
 
-	-g		[--graph]		arg		graph filename prefix (output for compression, input otherwise)
-	-m		[--meta]		arg		meta filename prefix (output for compression/update, input otherwise)
+	-g		[--graph]	arg		graph filename prefix (output for compression, input otherwise)
+	-m		[--meta]	arg		meta filename prefix (output for compression/update, input otherwise)
 	-lm		[--listmeta]	arg		list of meta filename prefixes (output for compression/update, input otherwise)
-	-dir	[--directory]	arg		compression and update:	directory for temporary files
-									decompression:			directory for temporary and output files
+	-dir		[--directory]	arg		compression and update:	directory for temporary files
+									decompression: directory for temporary and output files
 ```
 
 ## Usage examples
