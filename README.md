@@ -92,36 +92,36 @@ darrc <action parameter> <action-specific parameters> <general parameters>
 
 <action parameter>:
 
-	-c		[--compress]			compression
-	-u		[--update]			update
-	-d		[--decompress]			decompression
+	-c	[--compress]		compression
+	-u	[--update]		update
+	-d	[--decompress]		decompression
 
-	-v		[--version]			print version info
-	-h		[--help]			print help info
+	-v	[--version]		print version info
+	-h	[--help]		print help info
 
 <compression parameters>:
 
-	-k		[--kmer]	arg		length of k-mers, must be either 18, 27, 36 (default), 45, 54 or 63
-	-o		[--overlap]	arg		length of k-mers overlap, must be between 8 and 15 (default: 11)
+	-k	[--kmer]	arg	length of k-mers, must be either 18, 27, 36 (default), 45, 54 or 63
+	-o	[--overlap]	arg	length of k-mers overlap, must be between 8 and 15 (default: 11)
 
 <compression and update parameters>:
 
-	-min		[--minimizer]	arg		length of minimizers, must be between 8 and 15 (default: 9)
-	-mis		[--mismatch]	arg		number of mismatches allowed during merging (default: 5)
-	-1		[--mate1]	arg		input FASTA/Q file: single-end reads or first mate of paired-end reads
-	-2		[--mate2]	arg		input FASTA/Q file: second mate of paired-end reads
-	-l1		[--listmate1]	arg		list of input FASTA/Q files: single-end reads or first mate of paired-end reads
-	-l2		[--listmate2]	arg		list of input FASTA/Q files: second mate of paired-end reads
+	-min	[--minimizer]	arg	length of minimizers, must be between 8 and 15 (default: 9)
+	-mis	[--mismatch]	arg	number of mismatches allowed during merging (default: 5)
+	-1	[--mate1]	arg	input FASTA/Q file: single-end reads or first mate of paired-end reads
+	-2	[--mate2]	arg	input FASTA/Q file: second mate of paired-end reads
+	-l1	[--listmate1]	arg	list of input FASTA/Q files: single-end reads or first mate of paired-end reads
+	-l2	[--listmate2]	arg	list of input FASTA/Q files: second mate of paired-end reads
 
 <decompression parameters>: None
 
 <general parameters>:
 
-	-g		[--graph]	arg		graph filename prefix (output for compression, input otherwise)
-	-m		[--meta]	arg		meta filename prefix (output for compression/update, input otherwise)
-	-lm		[--listmeta]	arg		list of meta filename prefixes (output for compression/update, input otherwise)
-	-dir		[--directory]	arg		compression and update:	directory for temporary files
-									decompression: directory for temporary and output files
+	-g	[--graph]	arg	graph filename prefix (output for compression, input otherwise)
+	-m	[--meta]	arg	meta filename prefix (output for compression/update, input otherwise)
+	-lm	[--listmeta]	arg	list of meta filename prefixes (output for compression/update, input otherwise)
+	-dir	[--directory]	arg	compression and update:	directory for temporary files
+					decompression: directory for temporary and output files
 ```
 
 ## Usage examples
