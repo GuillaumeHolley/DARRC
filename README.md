@@ -106,7 +106,7 @@ darrc <action parameter> <action-specific parameters> <general parameters>
 
 <compression and update parameters>:
 
-	-min	[--minimizer]	arg	length of minimizers, must be between 8 and 15 (default: 9)
+	-min	[--minimizer]	arg	length of minimizers, must be between 8 and 10 (default: 9)
 	-mis	[--mismatch]	arg	number of mismatches allowed during merging (default: 5)
 	-1	[--mate1]	arg	input FASTA/Q file: single-end reads or first mate of paired-end reads
 	-2	[--mate2]	arg	input FASTA/Q file: second mate of paired-end reads

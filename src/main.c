@@ -15,7 +15,7 @@ const char* malloc_conf = "narenas:1,tcache:false,lg_dirty_mult:8,lg_chunk:22";
 #include "compression.h"
 
 #define MINIMIZER_MIN 8
-#define MINIMIZER_MAX 15
+#define MINIMIZER_MAX 10
 
 #define OVERLAP_MIN 9
 #define OVERLAP_MAX 15
@@ -41,7 +41,7 @@ void print_cli(){
 
 	printf("\n<compression and update parameters>:\n");
 
-	printf("\n\t-min\t[--minimizer]\targ\tlength of minimizers, must be between 8 and 15 (default: 9)\n");
+	printf("\n\t-min\t[--minimizer]\targ\tlength of minimizers, must be between 8 and 10 (default: 9)\n");
 	printf("\t-mis\t[--mismatch]\targ\tnumber of mismatches allowed during merging (default: 5)\n");
 	printf("\t-1\t[--mate1]\targ\tinput FASTA/Q file: single-end reads or first mate of paired-end reads\n");
 	printf("\t-2\t[--mate2]\targ\tinput FASTA/Q file: second mate of paired-end reads\n");
