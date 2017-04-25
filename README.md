@@ -75,7 +75,8 @@ brew install g++-x
 in which *x* is the latest major version of GCC and G++.
 
 Compiling DARRC should then be as simple as:
-```cd <DARRC_directory>
+```
+cd <DARRC_directory>
 ./configure CC=gcc-x
 make
 make install
