@@ -1,0 +1,13 @@
+# Default result files
+_*
+example.*
+example_zstd.*
+fitblk.*
+fitblk_zstd.* 
+zwrapbench.*
+foo.gz
+
+# Misc files
+*.bat
+*.zip
+*.txt
