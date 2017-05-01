@@ -23,8 +23,7 @@ brew install p7zip
 
 ## Compilation and installation
 
-DARRC compiles with GNU GCC and G++ (compatibility with Clang is in preparation). DARRC successfully compiles and runs on Ubuntu 14.04 and 15.04.
-Compiling and installing DARRC starts with installing the BFT library used by DARRC and then, DARRC itself.
+DARRC compiles with GNU GCC and G++ (compatibility with Clang is in preparation). DARRC successfully compiles and runs on Ubuntu 14.04, 15.04 and 16.10.
 
 **Important**: DARRC creates and opens simultaneously around a thousand of temporary files, which can be above the default limit of your OS, especially if this OS is macOS. Make sure before running DARRC that you have changed the default limit to an upper bound, using the following command:
 ```
@@ -64,9 +63,9 @@ Make sure that your environment variables are all set with <your_directory>.
 
 ### Mac OS
 
-Disclaimer: DARRC compiles but was not tested with Mac OS.
+**Disclaimer**: DARRC compiles but was not tested with Mac OS.
 
-For Mac OS, you will need the "real" GCC and G++, not the Clang interface that is called when you use GCC or G++. Both can be installed via Homebrew:
+For Mac OS, you will need the "real" GCC and G++ (not the Clang interface for GCC or G++, default on macOS). Both can be installed via Homebrew:
 ```
 brew install gcc-x
 brew install g++-x
